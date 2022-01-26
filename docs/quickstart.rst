@@ -106,7 +106,7 @@ implementation of a component:
     async def test(ctx):
         await ctx.send("testing", components=button)
 
-    @bot.component(button)
+    @bot.component(button.custom_id)
     async def button_response(ctx):
         print("someone clicked the button! :O")
 
